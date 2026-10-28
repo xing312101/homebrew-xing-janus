@@ -1,0 +1,23 @@
+# 照 xing312101/xing-janus-releases 最新的公開 release 更新 Formula/xj.rb（先驗 minisign 簽章：.github/update-formula.sh）。
+# 每天看一次；發佈完也可以手動跑（gh workflow run update.yml --repo xing312101/homebrew-xing-janus）。公開的 repo 跑 workflow 不用額度。
+# 這個檔案由開發 repo 的 scripts/homebrew/make-tap.sh 產生；用到的第三方 action 釘在固定的 commit
+name: Update formula
+
+on:
+  schedule:
+    - cron: '23 4 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - run: sudo apt-get update && sudo apt-get install -y minisign
+      - run: sh .github/update-formula.sh
+        env:
+          GH_TOKEN: ${{ github.token }}
