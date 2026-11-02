@@ -1,7 +1,8 @@
-# Xing Janus（xj）的 Homebrew formula：brew tap xing312101/xing-janus && brew install xj
+# Xing Janus（xj）的 Homebrew formula：brew tap xing312101/xing-janus && brew trust --formula xing312101/xing-janus/xj && brew install xj
 # url、sha256、version 這三行由 .github/workflows/update.yml 照 xing312101/xing-janus-releases 最新的公開 release 更新
 # （先用 minisign 驗過簽章，.github/update-formula.sh），不用手改。
-# 這個檔案由開發 repo 的 scripts/homebrew/make-tap.sh 產生
+# 這個檔案由開發 repo 的 scripts/homebrew/make-tap.sh 產生。tap 的檔案照 tap 的 LICENSE（BSD-2-Clause）；
+# xj 本身照壓縮檔裡的使用條款（下面的 license）
 class Xj < Formula
   desc "Coding agent in your terminal, behind a permission layer and an OS sandbox"
   homepage "https://github.com/xing312101/xing-janus-releases"

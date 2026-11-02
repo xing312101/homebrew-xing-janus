@@ -1,5 +1,5 @@
 # 照 xing312101/xing-janus-releases 最新的公開 release 更新 Formula/xj.rb（先驗 minisign 簽章：.github/update-formula.sh）。
-# 每天看一次；發佈完也可以手動跑（gh workflow run update.yml --repo xing312101/homebrew-xing-janus）。公開的 repo 跑 workflow 不用額度。
+# 每天看一次；開發 repo 的 sign-release.sh 發佈完會叫它（也可以手動跑：gh workflow run update.yml --repo xing312101/homebrew-xing-janus）。公開的 repo 跑 workflow 不用額度。
 # 這個檔案由開發 repo 的 scripts/homebrew/make-tap.sh 產生；用到的第三方 action 釘在固定的 commit
 name: Update formula
 
