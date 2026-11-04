@@ -6,9 +6,9 @@
 class Xj < Formula
   desc "Coding agent in your terminal, behind a permission layer and an OS sandbox"
   homepage "https://github.com/xing312101/xing-janus-releases"
-  url "https://github.com/xing312101/xing-janus-releases/releases/download/v0.1.2/xj-0.1.2-darwin.tar.gz"
-  sha256 "454943226d4d9261925e6fd3da506bd7849e558a82c9fc4f58d284865aeb8f12"
-  version "0.1.2"
+  url "https://github.com/xing312101/xing-janus-releases/releases/download/v0.1.3/xj-0.1.3-darwin.tar.gz"
+  sha256 "53a7b4d28c1df0b15b00bff074b60289c5fd143484478bb7883297153b15f50b"
+  version "0.1.3"
   # 使用條款（壓縮檔裡的 LICENSE）不是開源授權
   license :cannot_represent
 
